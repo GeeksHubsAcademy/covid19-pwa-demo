@@ -2,7 +2,7 @@
   "dir": "ltr",
   "lang": "es",
   "name": "Covid-results-pwa",
-  "start_url": "http://localhost:8080/",
+  "start_url": "https://geekshubsacademy.github.io/covid19-pwa-demo/index.html",
   "short_name": "covid-pwa",
   "display": "fullscreen",
   "theme_color": "#4F4F4F",
