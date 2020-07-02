@@ -65,6 +65,8 @@ document.querySelector('.update').addEventListener('click', () => {
     getImage().then(updateBackground);
 })
 
+getData().then(data => updateView(data))
+getImage().then(updateBackground);
 
 
 // /register service worker
