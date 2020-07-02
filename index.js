@@ -42,7 +42,7 @@ function parseNumberToString(num, decimalLength = 0, decimalsChar = ',', milesCh
 
 function getImage() {
     const options = {
-     headers: new Headers({ Authorization: `Client-ID ${'1VOqarasy1vFUP7PU01LKgTxMLJKEUAihky9XV4WM0c'}` })
+        headers: new Headers({ Authorization: `Client-ID ${'G9Y37xADtW7MM8yRCkNTv-_qLfJptQiRuA-d0es-19A'}` })
     }
     return fetch('https://api.unsplash.com/photos/random?query=covid-19', options)
         .then(r => r.json())
@@ -56,8 +56,20 @@ function updateBackground(data) {
 
 }
 
+
+
+
 document.querySelector('.update').addEventListener('click', () => {
 
     getData().then(data => updateView(data))
     getImage().then(updateBackground);
 })
+
+
+
+// /register service worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('./sw.js')
+        .then(function () { console.log('Service Worker Registered'); });
+}
