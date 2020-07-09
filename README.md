@@ -7,3 +7,7 @@
 
 A Porgressive Web App showing Covid19 stats
 
+
+# Demo
+
+https://geekshubsacademy.github.io/covid19-pwa-demo/
